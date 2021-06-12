@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Barra de navegação -->
+    <div id="navbar">
+    <nav>
+        <div>
+            <img src="./assets/home.png" alt="" id="image-nav-home">
+            <h3>Back to home</h3>
+        </div>
+        <div id="nav-icons-search">
+            <label for="search">Pesquisa:</label>
+            <input type="search" name="search" id="search" placeholder="search here">
+            <img src="./assets/imessage.png" alt="" class="image-nav">
+            <img src="./assets/settings.png" alt="" class="image-nav">
+            <img src="./assets/alarm.png" alt="" class="image-nav">
+        </div>
+        
+    </nav>
+    </div>
+    <div id="content-body">
+        <div id="content-left">
+            <!--Menu lateral -->
+            <aside>
+                <!-- cabeçalho com dados do usuário que esta logado-->
+                <header>
+                    <div id="image-name-menu">
+                        <div>
+                            <img id="user-image" src="./assets/tokyo-ghoul-kaneki-ken-5k-hi.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>Gabrielle Lauren</h3>
+                            <p>ID - U028AS14554</p>
+                        </div>
+                    </div>
+                    <div id="icon-image-menu">
+                        <img class="aside-menu-header-image" src="./assets/edit.png" alt="">
+                        <img class="aside-menu-header-image" src="./assets/happy.png" alt="">
+                        <img class="aside-menu-header-image" src="./assets/more.png" alt="">
+                    </div>
+                    
+                </header>
+                <!--menu -->
+                <div id="home-menu">
+                    <p>Home</p>
+                    <div>
+                        <a href=""><img src="./assets/home.png" class="image-menu-aside" alt=""> Home</a>
+                    </div>
+                    <div>
+                        <a href=""><img src="./assets/contract-job.png" class="image-menu-aside" alt=""> Profile</a>
+                    </div>
+                    <div>
+                        <a href=""><img src="./assets/typewriter-with-paper.png" class="image-menu-aside" alt=""> Subscription</a>
+                    </div>
+                    <div>
+                        <a href=""><img src="./assets/wallet.png" class="image-menu-aside" alt=""> Payment</a>
+                    </div>
+                    <div>
+                        <a href=""><img src="./assets/list.png" class="image-menu-aside" alt=""> Member List</a>
+                    </div>
+                </div>
+                <!--outros -->
+                <div id="others-menu">
+                    <p>Others</p>
+                    <div>
+                        <a href=""><img src="./assets/language.png" class="image-menu-aside" alt=""> Languague</a>
+                    </div>
+                    <div>
+                        <a href=""><img src="./assets/settings.png" class="image-menu-aside" alt=""> Settings</a>
+                    </div>
+                </div>
+                <!--Tipo de convite -->
+                <div id="invite">
+                    <h5>Invite type</h5>
+                    <P>Signed up on May 1, 2021</P>
+                </div>
+            </aside>
+        </div>
+        <div id="content-right">
+            <!-- um cabeçalho com o nome da página e uma indicação do endereço -->
+            <div>
+                <header>
+                    <h1><img src="./assets/wallet.png" alt=""> Payment</h1>
+                    <h3>Menu > Profile</h3>
+                </header>
+            </div>
+            
+            <!--conteudo principal onde tem a isneção de transação e uma tabela com as transações -->
+            <main>
+                <!--card onde se insere uma nova transação -->
+                <div>
+                    <!--Titulo do modo de pagamento -->
+                    <header>
+                        <h2>Select your method payment</h2>
+                    </header>
+                    <!--Formulario-->
+                    <form action="">
+                        <!--Form Labels-->
+                        <div id="form-labels">
+                            <label for="paypal">Paypal</label>
+                            <label for="card">Cartão crédito/débito</label>
+                        </div>
+                        <!--Modo de pagamento paypal/debito -->
+                        <div id="payment-mode">
+                            <div class="payment-paypal-card-mode" id="paypal-background">
+                                
+                                <img src="./assets/paypal.png" alt="">
+                                <input type="radio" name="payment-mode-input" id="paypal" value="Paypal">
+                            </div>
+                            <div class="payment-paypal-card-mode" id="card-background">
+                                <img src="./assets/card-exchange.png" alt="">
+                                <input type="radio" name="payment-mode-input" id="card" value="Credit card/ Debit card">
+                            </div>
+                            
+                        </div>
+                        <!-- Formulario pra preencher numero do cartão e nome -->
+                        <div id="data-user">
+                            <div id="label-name-card">
+                                <label for="card-number" id="card-label">Card number</label>
+                                <label for="name">Name</label>
+                            </div>
+                            <div id="name-card-number-form">
+                                <div>
+                                    <input type="number" name="card-number" id="card-number">
+                                    <img src="./assets/mastercard.png" alt="">
+                                </div>
+                                <input type="text" name="name" id="name">
+                            </div>
+                        </div>
+                        <!--dados como data, botão de cancelar e pagar, e  código de segurança -->
+                        <div id="buttons-date-security">
+                            <!-- Titulo da data e código de segurança do cartão -->
+                            <div id="header">
+                                <div><label for="date">Expiry date</label></div>
+                                <div><label for="security-code">CVV/CVC</label></div>
+                            </div>
+                            <!--campos do formulario com os botôes -->
+                            <div id="buttons-input">
+                                <input type="date" name="date" id="date">
+                                <div id="input-security">
+                                    <input type="number" name="security-code" id="security-code">
+                                    <img src="./assets/info.png" alt="">
+                                </div>
+                                <button id="confirm">Payment</button>
+                                <button id="cancel">Cancel</button>
+
+                            </div>
+                        </div>
+                    </form>   
+                    <!-- texto de rodapé -->
+                    <div id="footer-text">
+                        <span>
+                            Your card details would be security saved for faster payments. Your CVV will not be stored:
+                        </span>
+                        <a href="" id="footer-a">Read More.</a>
+                    </div>
+                </div>
+                <hr>
+                <!--tabela de transações efetuadas -->
+                <div id="table">
+                    <!--Titulo da tabela -->
+                    <header>
+                        <h3>Last Transaction</h3>
+                    </header>
+                    <!--Tabela -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>payment plain</th>
+                                <th>Mês da transação</th>
+                                <th>Valor pago por mês</th>
+                                <th>Método de pagamento</th>
+                                <th>Status do pagamento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="image-table"><img src="./assets/light-on.png" alt=""> Startup plan</td>
+                                <td>01/nov/2020</td>
+                                <td>R$ 0 / 1 Months</td>
+                                <td class="image-table"><img src="./assets/paypal.png" alt=""> Paypal</td>
+                                <td class="completed-transaction">Completed</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="image-table"><img src="./assets/economic-improvement.png" alt="">Economy plan</td>
+                                <td>01/jan/2021</td>
+                                <td>R$ 150 / 3 Months</td>
+                                <td class="image-table"><img src="./assets/card-exchange.png" alt=""> Credit Card</td>
+                                <td class="completed-transaction">Completed</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="image-table"><img src="./assets/business.png" alt=""> Business plan</td>
+                                <td>01/apr/2021</td>
+                                <td>R$ 350 / Months</td>
+                                <td class="image-table"><img src="./assets/paypal.png" alt=""> Paypal</td>
+                                <td class="pending-transaction">Pending</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>   
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>

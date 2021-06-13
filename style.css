@@ -371,6 +371,11 @@ main div div#footer-text a#footer-a{
     padding-top: 15px;
  }
 
+ main div#table header button{
+    border: none;
+    background-color: var(--white);
+ }
+
  main div#table table{
     width: 100%;
     text-align: center;
@@ -399,11 +404,6 @@ div#table table tbody tr img{
     
 }
 
- div#table table tbody td.pending-transaction{
-    border-radius: 6px;
-    background-color: rgba(255,0,0, 0.6);
-    color: var(--white);
- }
 
  /*------------Utilidades------------------*/
 aside header div#image-name-menu div p,
@@ -412,11 +412,22 @@ aside div#others-menu p,
 aside div#invite h5,
 form div#buttons-date-security div#header,
 form div#data-user div#label-name-card label,
-main div div#footer-text span{
+main div div#footer-text span,
+main div#table header button{
     opacity: 0.6;
 }
 
 aside div a{
     text-decoration: none;
     color: black;
+}
+
+aside div a#payment-link{
+    background-color: rgba(0,250,154, 0.4);
+
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }

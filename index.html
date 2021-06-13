@@ -65,7 +65,7 @@
                             Subscription</a>
                     </div>
                     <div>
-                        <a href=""><img src="./assets/wallet.png" class="image-menu-aside" alt=""> Payment</a>
+                        <a href="" id="payment-link"><img src="./assets/wallet.png" class="image-menu-aside" alt=""> Payment</a>
                     </div>
                     <div>
                         <a href=""><img src="./assets/list.png" class="image-menu-aside" alt=""> Member List</a>
@@ -172,6 +172,7 @@
                     <!--Titulo da tabela -->
                     <header>
                         <h3>Last Transaction</h3>
+                        <button onclick="Transaction.removeTransaction()">Clear all Transaction</button>
                     </header>
                     <!--Tabela -->
                     <table>
@@ -182,7 +183,7 @@
                                 <th>Mês da transação</th>
                                 <th>Valor pago por mês</th>
                                 <th>Método de pagamento</th>
-                                <th>Status do pagamento</th>
+                                <th>Nome do Comprador</th>
                             </tr>
                         </thead>
                         <tbody>

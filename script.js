@@ -105,11 +105,11 @@ const Form = {
 
         }
 
-        if (cardNumber.length >= 16) {
+        if (cardNumber.length > 16) {
 
             cardNumbers = Utils.forStartup()
 
-        } else if (cardNumber.length < 16 && cardNumber.length >= 14) {
+        } else if (cardNumber.length <= 16 && cardNumber.length >= 14) {
 
             cardNumbers = Utils.forBusiness()
 

@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <!--CSS-->
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <!--Barra de navegação -->
     <div id="navbar">
-    <nav>
-        <div>
-            <img src="./assets/home.png" alt="" id="image-nav-home">
-            <h3>Back to home</h3>
-        </div>
-        <div id="nav-icons-search">
-            <label for="search">Pesquisa:</label>
-            <input type="search" name="search" id="search" placeholder="search here">
-            <img src="./assets/imessage.png" alt="" class="image-nav">
-            <img src="./assets/settings.png" alt="" class="image-nav">
-            <img src="./assets/alarm.png" alt="" class="image-nav">
-        </div>
-        
-    </nav>
+        <nav>
+            <div>
+                <img src="./assets/home.png" alt="" id="image-nav-home">
+                <h3>Back to home</h3>
+            </div>
+            <div id="nav-icons-search">
+                <label for="search">Pesquisa:</label>
+                <input type="search" name="search" id="search" placeholder="search here">
+                <img src="./assets/imessage.png" alt="" class="image-nav">
+                <img src="./assets/settings.png" alt="" class="image-nav">
+                <img src="./assets/alarm.png" alt="" class="image-nav">
+            </div>
+
+        </nav>
     </div>
     <div id="content-body">
         <div id="content-left">
@@ -47,7 +49,7 @@
                         <img class="aside-menu-header-image" src="./assets/happy.png" alt="">
                         <img class="aside-menu-header-image" src="./assets/more.png" alt="">
                     </div>
-                    
+
                 </header>
                 <!--menu -->
                 <div id="home-menu">
@@ -59,7 +61,8 @@
                         <a href=""><img src="./assets/contract-job.png" class="image-menu-aside" alt=""> Profile</a>
                     </div>
                     <div>
-                        <a href=""><img src="./assets/typewriter-with-paper.png" class="image-menu-aside" alt=""> Subscription</a>
+                        <a href=""><img src="./assets/typewriter-with-paper.png" class="image-menu-aside" alt="">
+                            Subscription</a>
                     </div>
                     <div>
                         <a href=""><img src="./assets/wallet.png" class="image-menu-aside" alt=""> Payment</a>
@@ -93,7 +96,7 @@
                     <h3>Menu > Profile</h3>
                 </header>
             </div>
-            
+
             <!--conteudo principal onde tem a isneção de transação e uma tabela com as transações -->
             <main>
                 <!--card onde se insere uma nova transação -->
@@ -103,7 +106,7 @@
                         <h2>Select your method payment</h2>
                     </header>
                     <!--Formulario-->
-                    <form action="">
+                    <form action="" onsubmit="Form.submit(event)">
                         <!--Form Labels-->
                         <div id="form-labels">
                             <label for="paypal">Paypal</label>
@@ -112,15 +115,14 @@
                         <!--Modo de pagamento paypal/debito -->
                         <div id="payment-mode">
                             <div class="payment-paypal-card-mode" id="paypal-background">
-                                
                                 <img src="./assets/paypal.png" alt="">
                                 <input type="radio" name="payment-mode-input" id="paypal" value="Paypal">
                             </div>
                             <div class="payment-paypal-card-mode" id="card-background">
                                 <img src="./assets/card-exchange.png" alt="">
-                                <input type="radio" name="payment-mode-input" id="card" value="Credit card/ Debit card">
+                                <input type="radio" name="payment-mode-input" id="card" value="Card">
                             </div>
-                            
+
                         </div>
                         <!-- Formulario pra preencher numero do cartão e nome -->
                         <div id="data-user">
@@ -130,7 +132,7 @@
                             </div>
                             <div id="name-card-number-form">
                                 <div>
-                                    <input type="number" name="card-number" id="card-number">
+                                    <input type="number" name="card-number" id="card-number" maxlength="16">
                                     <img src="./assets/mastercard.png" alt="">
                                 </div>
                                 <input type="text" name="name" id="name">
@@ -151,11 +153,11 @@
                                     <img src="./assets/info.png" alt="">
                                 </div>
                                 <button id="confirm">Payment</button>
-                                <button id="cancel">Cancel</button>
+                                <button id="cancel" type="reset">Cancel</button>
 
                             </div>
                         </div>
-                    </form>   
+                    </form>
                     <!-- texto de rodapé -->
                     <div id="footer-text">
                         <span>
@@ -184,36 +186,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td class="image-table"><img src="./assets/light-on.png" alt=""> Startup plan</td>
-                                <td>01/nov/2020</td>
-                                <td>R$ 0 / 1 Months</td>
-                                <td class="image-table"><img src="./assets/paypal.png" alt=""> Paypal</td>
-                                <td class="completed-transaction">Completed</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td class="image-table"><img src="./assets/economic-improvement.png" alt="">Economy plan</td>
-                                <td>01/jan/2021</td>
-                                <td>R$ 150 / 3 Months</td>
-                                <td class="image-table"><img src="./assets/card-exchange.png" alt=""> Credit Card</td>
-                                <td class="completed-transaction">Completed</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td class="image-table"><img src="./assets/business.png" alt=""> Business plan</td>
-                                <td>01/apr/2021</td>
-                                <td>R$ 350 / Months</td>
-                                <td class="image-table"><img src="./assets/paypal.png" alt=""> Paypal</td>
-                                <td class="pending-transaction">Pending</td>
-                            </tr>
                         </tbody>
                     </table>
-                </div>   
+                </div>
             </main>
         </div>
     </div>
 
+    <!-- Script-->
+    <script src="./script.js"></script>
 </body>
+
 </html>

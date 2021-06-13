@@ -148,14 +148,10 @@ aside div a img.image-menu-aside{
     width: 15%;
 }
 
-aside div#home-menu{
-    padding: 50px 0 0px;
-}
-
-
-
-aside div#others-menu{
-    padding: 50px 0;
+aside div#home-menu,
+aside div#others-menu,
+aside div#invite{
+    padding: 25px 0 0px;
 }
 
 /*-------------------conteúdo do formulario e tabela---------------*/
